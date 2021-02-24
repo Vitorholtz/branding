@@ -55,10 +55,22 @@ header {
               cursor: crosshair;
           }
       }
+
+      .branding {
+
+        color: $purple;
+        pointer-events: none;
+
+        &::after {
+
+          width: 100%;
+        }
+      }
     }
   
       img {
         width: 3rem;
+        transform: translateY(.4rem);
       }
     }
 
