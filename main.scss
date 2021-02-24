@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Bison';
+    src: url(fonts/Bison-Bold.ttf);
+
+  }
+
+  @font-face {
+
+    font-family: Bison-ThickOutline;
+    src: url(fonts/Bison-ThickOutline.ttf);
+  }
+
+
+
+  @import 'helpers/colors';
+  @import 'helpers/globals';  
+  @import 'components/header';  
+  @import 'helpers/mediaqueries';  
+
+
+  //scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bgblack; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $white; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
