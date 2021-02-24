@@ -31,7 +31,6 @@ body {
 
 html {
   font-family: 'Cairo', sans-serif;
-  color: #FFFFFF;
   font-size: 62.5%;
 }
 
@@ -143,6 +142,81 @@ header .mobile-version {
     -webkit-transform: translateX(-200rem);
             transform: translateX(-200rem);
   }
+}
+
+section {
+  max-width: 90rem;
+  margin: 16rem auto;
+}
+
+section .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .description h1 {
+  font-size: 14rem;
+  color: #1d1d1f;
+  line-height: .8;
+  font-family: 'bison';
+}
+
+section .description h2 {
+  font-size: 6rem;
+  color: #E2E2E2;
+  font-family: 'bison';
+}
+
+section .description p {
+  font-size: 2.2rem;
+  color: #1d1d1f;
+  opacity: .5;
+  margin: 3rem 0rem 3rem 2rem;
+  line-height: 1;
+  position: relative;
+}
+
+section .description p:before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #E2E2E2;
+}
+
+section .img-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section .img-container .img-card {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .img-container .img-card img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -333,6 +407,29 @@ header .mobile-version {
   }
   header .mobile-version .mobile-menu-active {
     left: 0%;
+  }
+  section {
+    width: 98%;
+  }
+  section .description {
+    width: 90%;
+    margin: auto;
+  }
+  section .description h1, section .description h2 {
+    -webkit-transform: translateX(-1.6rem);
+            transform: translateX(-1.6rem);
+  }
+  section .description p {
+    margin-left: 0;
+  }
+  section .img-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .img-container .img-card {
+    width: 100%;
   }
 }
 

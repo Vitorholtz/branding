@@ -229,6 +229,37 @@
      }
     }
    }
+
+   section {
+
+    .description {
+
+        width: 90%;
+        margin: auto;
+
+        h1,h2 {
+
+            transform: translateX(-1.6rem);
+        }
+        
+        p {
+
+            margin-left: 0;
+        }
+    }
+       
+    width: 98%;
+
+    .img-container {
+
+        flex-direction: column;
+        
+        .img-card {
+
+            width: 100%;
+        }
+     }
+   }
 }
     
       
