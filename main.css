@@ -176,7 +176,7 @@ section .description p {
   font-size: 2.2rem;
   color: #1d1d1f;
   opacity: .5;
-  margin: 3rem 0rem 3rem 2rem;
+  margin: 2rem 0rem 2rem 2rem;
   line-height: 1;
   position: relative;
 }
@@ -217,6 +217,22 @@ section .img-container .img-card {
 
 section .img-container .img-card img {
   width: 100%;
+}
+
+.icons-container {
+  width: 10rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1em;
+  font-size: 2rem;
+  color: #343336;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
 }
 
 @media only screen and (max-width: 1600px) {
@@ -431,6 +447,18 @@ section .img-container .img-card img {
   section .img-container .img-card {
     width: 100%;
   }
+}
+
+.stickhome img {
+  width: 4em;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0em;
+  right: 4%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: crosshair;
 }
 
 /* width */
