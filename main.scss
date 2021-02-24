@@ -17,7 +17,7 @@
   @import 'components/header';  
   @import 'components/sections';  
   @import 'helpers/mediaqueries';  
-  
+
 
     // to-the-top icon
 
@@ -32,6 +32,25 @@
       transition:1s;
       cursor: crosshair;
   
+  }
+
+  // Efeito entrada
+
+  .white-square-animation {
+  
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 200rem;
+    height: 200rem;
+    background-color: $bgblack;
+    animation: siteReveal 1s forwards;
+  
+    @keyframes siteReveal {
+  
+      from {transform: translateX(0);}
+      to {transform: translateX(-200rem);}
+    }
   }
 
 

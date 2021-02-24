@@ -461,6 +461,28 @@ section .img-container .img-card img {
   cursor: crosshair;
 }
 
+.white-square-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200rem;
+  height: 200rem;
+  background-color: #121214;
+  -webkit-animation: siteReveal 1s forwards;
+          animation: siteReveal 1s forwards;
+}
+
+@keyframes siteReveal {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-200rem);
+            transform: translateX(-200rem);
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
