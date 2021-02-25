@@ -188,7 +188,7 @@ section .description p {
   color: #1d1d1f;
   opacity: .5;
   margin: 2rem 0rem 2rem 2rem;
-  line-height: 1;
+  line-height: 1.4;
   position: relative;
 }
 
@@ -469,6 +469,9 @@ section .img-container .img-card img {
   right: 4%;
   -webkit-transition: 1s;
   transition: 1s;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0px 4px 10px -7px black;
+          box-shadow: 0px 4px 10px -7px black;
   cursor: crosshair;
 }
 
